@@ -1,0 +1,65 @@
+#led-matrix {
+    display: table;
+    /*border-collapse: collapse;*/
+}
+
+#led-matrix .row {
+    display: table-row;
+}
+
+#led-matrix .cell {
+    display: table-cell;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+#led-matrix .cell input {
+    margin: auto;
+}
+
+#led-matrix .cell button {
+    width: 30px;
+    height: 30px;
+    /*box-sizing: border-box;*/
+}
+
+#led-matrix .cell .flex-button-container{
+    display: flex;
+}
+
+#led-matrix .cell.col-header .flex-button-container{
+    flex-direction: row-reverse;
+}
+
+#led-matrix .cell.row-header .flex-button-container{
+    flex-direction: column;
+}
+
+#led-matrix .cell.row-header.col-header .flex-button-container {
+    align-items: flex-start;
+}
+
+#led-matrix .cell.row-header.col-header .flex-button-container .reset-all{
+    align-self: flex-end;
+}
+
+#led-matrix .cell.row0 {
+    border-top: 2px solid black;
+}
+
+#led-matrix .cell.col7 {
+    border-right: 2px solid black;
+}
+
+#led-matrix .cell.row-header.col-header {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#led-matrix {
+    border: 2px solid grey;
+}
