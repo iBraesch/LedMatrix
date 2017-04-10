@@ -7,11 +7,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </head>
 
-<body onload="generateMatrix()">
+<body onload="generateMatrix();">
+    <button id="connect" onclick="client.connect(options);">Connect</button>
+    <button id="disconnect" onclick="client.disconnect();">Disconnect</button>
     <div id="led-matrix">
     </div>
 </body>
