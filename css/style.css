@@ -1,6 +1,6 @@
 #led-matrix {
     display: table;
-    /*border-collapse: collapse;*/
+    border-collapse: collapse;
 }
 
 #led-matrix .row {
@@ -14,17 +14,16 @@
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    box-sizing: border-box;
 }
 
-#led-matrix .cell input {
-    margin: auto;
+#led-matrix .led.selected {
+    background-color: red;
+    border-radius: 20px;
 }
 
 #led-matrix .cell button {
-    width: 30px;
-    height: 30px;
-    /*box-sizing: border-box;*/
+    width: 28px;
+    height: 28px;
 }
 
 #led-matrix .cell .flex-button-container{
@@ -47,19 +46,11 @@
     align-self: flex-end;
 }
 
-#led-matrix .cell.row0 {
-    border-top: 2px solid black;
-}
-
-#led-matrix .cell.col7 {
-    border-right: 2px solid black;
-}
-
 #led-matrix .cell.row-header.col-header {
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    /*border-bottom: 1px solid transparent;
+    /*border-left: 1px solid transparent;*/
 }
 
 #led-matrix {
-    border: 2px solid grey;
+    border: 2px solid black; 
 }
